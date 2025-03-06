@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #0B2434;
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 2em;
+    line-height: 1.5;
+}
+
+.container {
+    height: auto;
+    padding: 5em 0;
+    width: 80vw;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    gap: 1.5em;
+    max-width: 700px;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.dice {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    box-shadow: 0px 2px 2px #00000026;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #5035FF;
+    color: white;
+    font-weight: 700;
+    padding: 0.75em 1.75em;
+    border-radius: 7px;
+    border: none;
+    margin-top: 1em;
+}
+
+.new-game {
+    background-color: #dd35ff;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 0 3em;
+    }
+
+    .dice {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 0 5em;
+    }
+
+    .dice {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0 5em;
+    }
+
+    .dice {
+        width: 70px;
+        height: 70px;
+        font-size: 2.25rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .container {
+        gap: 2.5em;
+    }
+}
